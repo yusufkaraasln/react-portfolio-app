@@ -1,0 +1,23 @@
+.app{
+    height: 100vh;
+    .sections{
+        width: 100%;
+        height: calc(100vh - 5rem);
+        background: lightsalmon;
+        position: relative;
+        top: 5rem;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+
+
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        > *{
+            width: 100vw;
+            height: calc(100vh - 5rem);
+            scroll-snap-align: start;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.contact{
+
+    background: lightblue;
+    display: flex;
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+        flex: 1;
+        i{
+            font-size: 30rem;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    form{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        input{
+            width: 300px;
+            height: 30px;
+            font-size: 14px;
+
+        }
+        textarea{
+            width: 300px;
+            height: 200px;
+            font-size: 14px;
+
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            color: whitesmoke;
+            background: #242526;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+
+}

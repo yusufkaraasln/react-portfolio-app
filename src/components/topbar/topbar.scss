@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  background: #fff;
+  color: $main-color;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+
+  &-wrapper {
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      &-logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: inherit;
+        margin-right: 2.5rem;
+      }
+
+      .item-container {
+        display: flex;
+        align-items: center;
+        margin-left: 1.8rem;
+        i {
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+        }
+        span {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-right {
+      .hamburger {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        span {
+            margin-left: .4px;
+            border-radius: 1rem;
+          width: 100%;
+          background-color: $main-color;
+          height: 6px;
+          transform-origin: left;
+          transition: 1s all ease-in-out;
+        }
+      }
+    }
+  }
+
+  &.active{
+    background: $main-color;
+    color: #fff;
+
+        .hamburger{
+    overflow-y: hidden;
+
+            span{
+                
+                &:first-child{
+                    transform: rotate(45deg);
+                    background-color: #fff;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    
+                }
+                &:last-child{
+                    transform: rotate(-45deg);
+                    background-color: #fff;
+                }
+            }
+        }
+
+
+  }
+
+}
